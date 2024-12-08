@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Carolina";
+  font-style: normal;
+  font-weight: 400;
+  src: url("././public/fonts/CarltineMedium-MVnzn.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-style: normal;
+  font-weight: 200;
+  src: url("././public/fonts/OpenSans-Light.ttf") format("woff2");
+}
+
+.font-carltine-cm {
+  font-family: "Carolina";
+}
+
+.font-opensans-cm {
+  font-family: "OpenSans-Regular";
+}
+
+* {
+  transition: filter 0.1s ease;
+}
