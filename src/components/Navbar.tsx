@@ -13,15 +13,15 @@ const MENU_ITEMS: Array<MenuItem> = [
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="flex sticky z-50 top-0 justify-evenly items-center border-b-[1px] border-neutral-700 bg-[#111111]">
-      <section className="flex flex-col text-neutral-500 mt-1">
+    <nav className="flex sticky z-50 top-0 justify-evenly items-center border-b-[1px] border-yellow-800 bg-[#111111d8] backdrop-blur-xl px-8">
+      <section className="flex flex-col text-neutral-500 mt-1 px-5 py-6 md:p-0 text-center md:text-start ">
         <h2 className="text-[1.50rem] font-carltine-cm text-yellow-600 leading-4">
           KarlinCoder
         </h2>
         <p className="text-sm leading-4">Web Frontend Developer</p>
       </section>
 
-      <aside>
+      <aside className="hidden md:block">
         <ul className="flex flex-wrap text-neutral-200 text-[0.97rem]">
           {MENU_ITEMS.map((item) => {
             return (
@@ -40,3 +40,5 @@ export const Navbar: React.FC = () => {
     </nav>
   );
 };
+
+export default Navbar;

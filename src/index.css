@@ -27,3 +27,7 @@
 * {
   transition: filter 0.1s ease;
 }
+
+body {
+  scroll-behavior: smooth;
+}
