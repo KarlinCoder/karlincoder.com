@@ -1,10 +1,11 @@
 import { FaGithub } from "react-icons/fa";
+import profileImage from "/avatar.jpg";
 
 export const Header: React.FC = () => {
   return (
     <header className="flex gap-5 flex-wrap justify-center items-center min-h-[570px] bg-gradient-to-tl from-neutral-900 to-[#130a06]">
       <div className="max-w-[350px] overflow-hidden rounded-full">
-        <img src="/avatar.jpg" alt="imagen mia" className="w-full h-full" />
+        <img src={profileImage} alt="imagen mia" className="w-full h-full" />
       </div>
       <aside className="max-w-[400px] ">
         <h1 className="font-carltine-cm text-4xl text-yellow-400">¡Hola!</h1>
