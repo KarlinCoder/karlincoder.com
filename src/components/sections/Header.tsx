@@ -5,7 +5,7 @@ const buttonClass =
 
 const Header: React.FC = () => {
   return (
-    <header className="flex gap-5 flex-wrap justify-center items-center h-fit py-[90px] px-8">
+    <header className="flex gap-5 flex-wrap justify-center items-center h-fit pb-[60px] pt-[115px] px-8">
       <div className="max-w-[300px] overflow-hidden rounded-full">
         <img
           src="/images/avatar.webp"

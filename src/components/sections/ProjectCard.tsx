@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
 }) => {
   return (
-    <article className="flex max-[420px]:flex-col-reverse sm:flex-row justify-between max-w-[520px] min-h-[210px] bg-neutral-800 bg-opacity-50 overflow-hidden rounded-md hover:scale-[1.01] hover:bg-opacity-90 transition-transform">
+    <article className="flex max-[420px]:flex-col-reverse sm:flex-row justify-between max-w-[520px] min-h-[210px] bg-neutral-800 bg-opacity-50 overflow-hidden rounded-md hover:scale-[1.01] hover:bg-opacity-60 transition-transform">
       <section className="flex flex-col justify-between p-4 w-[70%] max-[420px]:w-full">
         <header className="flex flex-col gap-2">
           <p className="text-lg text-neutral-100 font-bold font-opensans-cm">
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <aside className="w-[180px] max-[420px]:w-full">
         <div className="w-full h-full object-cover">
           <img
-            className="h-full object-cover"
+            className="h-full object-cover brightness-75"
             src={image ? image : "/images/projects/youtubedownloader.webp"}
             alt="project screenshot"
           />
