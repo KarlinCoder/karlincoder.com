@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
               <li key={item.text}>
                 <a
                   href={item.link}
-                  className="inline-block px-5 py-6 transition-colors hover:bg-neutra-800 hover:bg-opacity-20 active:bg-transparent hover:text-[#b97926] hover:underline hover:underline-offset-8"
+                  className="inline-block px-5 py-6 text-neutral-300 hover:text-[#df9d47] active:text-neutral-300 hover:underline hover:underline-offset-8"
                 >
                   {item.text}
                 </a>

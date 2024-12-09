@@ -8,7 +8,7 @@ const spanClasses = "text-yellow-400 font-bold";
 const Header: React.FC = () => {
   return (
     <header className="flex gap-5 flex-wrap justify-center items-center h-fit pb-[60px] pt-[60px] md:pt-[115px] px-8">
-      <div className="max-w-[300px] max-h-[300px] h-full w-full overflow-hidden rounded-full">
+      <div className="max-w-[300px] max-h-[300px] h-full w-full overflow-hidden rounded-full border-2 border-yellow-400">
         <img
           src="/images/avatar.webp"
           alt="imagen mia"
