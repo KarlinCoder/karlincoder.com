@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         </p>
         <footer className="flex gap-2 justify-start items-center mt-4">
           <a
-            href="https://github.com/KarlinCoder"
+            href="https://api.whatsapp.com/send?phone=5352662128&text=Hola%20%F0%9F%91%8B%2C%20vengo%20desde%20su%20portafolio"
             target="_blank"
             className={buttonClass}
           >
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             <FaInstagram className="scale-[1.5]" />
           </a>
           <a
-            href="https://github.com/KarlinCoder"
+            href="https://www.facebook.com/profile.php?id=61557125602814"
             target="_blank"
             className={buttonClass}
           >
