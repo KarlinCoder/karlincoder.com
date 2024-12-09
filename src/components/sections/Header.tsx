@@ -3,9 +3,11 @@ import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const buttonClass =
   "grid place-content-center rounded-md bg-neutral-700 bg-opacity-20 hover:bg-opacity-60 active:bg-opacity-20 transition-colors cursor-pointer p-[11px] text-sm text-white border border-neutral-600";
 
+const spanClasses = "text-yellow-400 font-bold";
+
 const Header: React.FC = () => {
   return (
-    <header className="flex gap-5 flex-wrap justify-center items-center h-fit pb-[60px] pt-[115px] px-8">
+    <header className="flex gap-5 flex-wrap justify-center items-center h-fit pb-[60px] pt-[60px] md:pt-[115px] px-8">
       <div className="max-w-[300px] overflow-hidden rounded-full">
         <img
           src="/images/avatar.webp"
@@ -13,20 +15,21 @@ const Header: React.FC = () => {
           className="w-full h-full"
         />
       </div>
-      <aside className="max-w-[400px] ">
-        <h1 className="font-carltine-cm text-4xl text-yellow-400">
-          ¡Hola! 👋 Soy Giancarlo
+      <aside className="max-w-[400px] text-center md:text-left">
+        <h1>
+          <p className="font-carltine-cm text-4xl text-yellow-400 mb-2">
+            ¡Hola! 👋 Soy Giancarlo
+          </p>
+          <p className="text-pretty text-neutral-200 font-opensans-cm">
+            Desarrollador <span className={spanClasses}>front-end</span>{" "}
+            apasionado por crear{" "}
+            <span className={spanClasses}>experiencias</span> web atractivas y
+            funcionales. ¡Explora mi portafolio y descubre cómo puedo{" "}
+            <span className={spanClasses}>ayudarte</span> a llevar tu proyecto
+            al siguiente nivel!
+          </p>
         </h1>
-        <p className="text-pretty text-neutral-200 font-opensans-cm">
-          Desarrollador{" "}
-          <span className="text-blue-400 font-bold">front-end</span> apasionado
-          por crear{" "}
-          <span className="text-blue-400 font-bold">experiencias</span> web
-          atractivas y funcionales. ¡Explora mi portafolio y descubre cómo puedo{" "}
-          <span className="text-blue-400 font-bold">ayudarte</span> a llevar tu
-          proyecto al siguiente nivel!
-        </p>
-        <footer className="flex gap-2 justify-start items-center mt-4">
+        <footer className="flex gap-2 justify-center md:justify-start items-center mt-4">
           <a
             href="https://api.whatsapp.com/send?phone=5352662128&text=Hola%20%F0%9F%91%8B%2C%20vengo%20desde%20su%20portafolio"
             target="_blank"

@@ -3,15 +3,15 @@ import ProjectCard from "./ProjectCard";
 
 const PARAGRAPH_CLASSES =
   "text-[.9rem] text-neutral-300 leading-5 font-opensans-cm";
-const SPAN_CLASSES = "text-blue-500 font-bold";
+const SPAN_CLASSES = "text-yellow-500 font-bold";
 
 const Proyectos: React.FC = () => {
   return (
-    <section className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8">
-      <h2
-        id="experiencia"
-        className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300"
-      >
+    <section
+      id="proyectos"
+      className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
+    >
+      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
         <p>Proyectos</p>
         <RiBookShelfLine className="mt-2" />
       </h2>
@@ -24,10 +24,11 @@ const Proyectos: React.FC = () => {
         >
           <p className={PARAGRAPH_CLASSES}>
             Descargador moderno de videos de YouTube, con un{" "}
-            <span className={SPAN_CLASSES}>backend</span> distribuido en
+            <span className={SPAN_CLASSES}>back-end</span> distribuido en
             múltiples <span className={SPAN_CLASSES}>servidores</span>. Su
-            interfaz de usuario es minimalista y se apoya en una API sencilla
-            para realizar búsquedas.
+            interfaz de usuario es minimalista y se apoya en mi{" "}
+            <span className={SPAN_CLASSES}>API Rest</span> sencilla para
+            realizar búsquedas.
           </p>
         </ProjectCard>
         <ProjectCard
@@ -76,10 +77,9 @@ const Proyectos: React.FC = () => {
         >
           <p className={PARAGRAPH_CLASSES}>
             Una moderna <span className={SPAN_CLASSES}>Landing Page</span> que
-            utiliza innovadoras{" "}
-            <span className={SPAN_CLASSES}>animaciones CSS</span> para mejorar
-            la experiencia del usuario. El formulario de contacto envía mensajes
-            a través de <span className={SPAN_CLASSES}>emailjs</span>.
+            utiliza <span className={SPAN_CLASSES}>animaciones CSS</span> para
+            mejorar la experiencia del usuario. El formulario de contacto envía
+            mensajes a través de <span className={SPAN_CLASSES}>emailjs</span>.
           </p>
         </ProjectCard>
         <ProjectCard
@@ -92,9 +92,8 @@ const Proyectos: React.FC = () => {
             Una <span className={SPAN_CLASSES}>API Rest</span> eficiente para
             realizar búsquedas en <span className={SPAN_CLASSES}>YouTube</span>,
             devolviendo un <span className={SPAN_CLASSES}>JSON</span> que
-            incluye un
-            <span className={SPAN_CLASSES}>Array</span> con detalles de cada
-            video, como ID, título, miniatura, duración y URL.
+            incluye un <span className={SPAN_CLASSES}>Array</span> con detalles
+            de cada video, como ID, título, miniatura, duración y URL.
           </p>
         </ProjectCard>
       </main>

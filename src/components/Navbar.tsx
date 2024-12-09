@@ -4,11 +4,10 @@ interface MenuItem {
 }
 
 const MENU_ITEMS: Array<MenuItem> = [
-  { text: "Personal", link: "#personal" },
   { text: "Experiencia", link: "#experiencia" },
   { text: "Skills", link: "#skills" },
   { text: "Proyectos", link: "#proyectos" },
-  { text: "Intereses", link: "#intereses" },
+  { text: "Personal", link: "#personal" },
 ];
 
 export const Navbar: React.FC = () => {

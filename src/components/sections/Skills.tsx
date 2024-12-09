@@ -13,11 +13,11 @@ const iconClasses = "text-3xl";
 
 const Skills: React.FC = () => {
   return (
-    <section className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8">
-      <h2
-        id="skills"
-        className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300"
-      >
+    <section
+      id="skills"
+      className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
+    >
+      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
         <p>Skills</p>
         <FaCubesStacked className="mt-2" />
       </h2>

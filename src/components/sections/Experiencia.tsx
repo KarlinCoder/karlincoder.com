@@ -2,20 +2,20 @@ import { BiCircle } from "react-icons/bi";
 import { PiUserList } from "react-icons/pi";
 
 const dotListClasses = "min-w-3 min-h-3";
-const textClasses = "leading-5 text-md";
+const textClasses = "leading-5 text-md text-pretty";
 
 export const Experiencia: React.FC = () => {
   return (
-    <section className="flex flex-col gap-6 flex-wrap justify-center items-center h-fit py-[60px] px-4">
-      <h2
-        id="experiencia"
-        className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300"
-      >
+    <section
+      id="experiencia"
+      className="flex flex-col gap-6 flex-wrap justify-center items-center h-fit py-[60px] px-4"
+    >
+      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
         <p>Experiencia</p>
         <PiUserList className="mt-2" />
       </h2>
       <main>
-        <div className="bg-neutral-700 bg-opacity-20 hover:bg-opacity-30 active:bg-opacity-20 py-8 px-9 rounded-2xl border border-neutral-400">
+        <div className="max-w-[600px] md:max-w-[700px] lg:max-w-[870px] bg-neutral-700 bg-opacity-20 hover:bg-opacity-30 active:bg-opacity-20 py-8 px-9 rounded-2xl">
           <ul className="flex flex-col gap-3 text-neutral-300 list-inside font-opensans-cm">
             <li className="flex items-center gap-2">
               <BiCircle className={dotListClasses} />
@@ -109,6 +109,16 @@ export const Experiencia: React.FC = () => {
                 <span className="text-yellow-400 font-bold">prototipos</span>
                 utilizando herramientas como Figma o Adobe XD para el diseño de{" "}
                 <span className="text-yellow-400 font-bold">interfaces</span>.
+              </p>
+            </li>
+            <li className="flex items-center gap-2">
+              <BiCircle className={dotListClasses} />
+              <p className={textClasses}>
+                Dominio en la creación de{" "}
+                <span className="text-yellow-400 font-bold">
+                  prompts efectivos
+                </span>{" "}
+                para ChatGPT, mejorando la interacción con el modelo.
               </p>
             </li>
           </ul>
