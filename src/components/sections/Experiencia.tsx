@@ -10,9 +10,14 @@ export const Experiencia: React.FC = () => {
       id="experiencia"
       className="flex flex-col gap-6 flex-wrap justify-center items-center h-fit py-[60px] px-4"
     >
-      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
-        <p>Experiencia</p>
-        <PiUserList className="mt-2" />
+      <h2 className="flex flex-col items-center ga font-sans font-bold text-4xl text-neutral-300">
+        <div className="flex gap-2  justify-center items-center">
+          <p>Experiencia</p>
+          <PiUserList />
+        </div>
+        <p className="text-sm font-sans mt-1 font-semibold text-blue-500">
+          CONTRIBUCIONES DESTACADAS
+        </p>
       </h2>
       <section>
         <div className="max-w-[600px] md:max-w-[700px] lg:max-w-[870px] bg-neutral-700 bg-opacity-20 hover:bg-opacity-30 active:bg-opacity-20 py-8 px-9 rounded-2xl">
