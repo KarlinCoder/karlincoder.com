@@ -18,10 +18,10 @@ export const Navbar: React.FC = () => {
           <img
             src="/images/avatar_icon.webp"
             alt="website icon"
-            className="w-full h-full"
+            className="w-full h-full "
           />
         </div>
-        <div className="flex flex-col text-neutral-500 mt-1 text-center md:text-start ">
+        <div className="flex flex-col text-neutral-500 mt-1 text-start ">
           <h2 className="text-[1.50rem] font-carltine-cm text-yellow-600 leading-4">
             KarlinCoder
           </h2>
