@@ -54,8 +54,8 @@ export const Experiencia: React.FC = () => {
             <li className="flex items-center gap-2">
               <BiCircle className={dotListClasses} />
               <p className={textClasses}>
-                Creación de{" "}
-                <span className="text-yellow-400 font-bold">librerías</span>
+                Desarrollo de{" "}
+                <span className="text-yellow-400 font-bold">librerías</span>{" "}
                 para uso e integraciones con otros servicios, facilitando el
                 desarrollo ágil.
               </p>
@@ -82,7 +82,7 @@ export const Experiencia: React.FC = () => {
                 Revisión de código de nuevos desarrolladores y{" "}
                 <span className="inline-block text-yellow-400 font-bold">
                   ayuda
-                </span>
+                </span>{" "}
                 en su incorporación, promoviendo buenas las prácticas.
               </p>
             </li>
@@ -105,8 +105,8 @@ export const Experiencia: React.FC = () => {
             <li className="flex items-center gap-2">
               <BiCircle className={dotListClasses} />
               <p className={textClasses}>
-                Creación de
-                <span className="text-yellow-400 font-bold">prototipos</span>
+                Diseño de
+                <span className="text-yellow-400 font-bold"> prototipos </span>
                 utilizando herramientas como Figma o Adobe XD para el diseño de{" "}
                 <span className="text-yellow-400 font-bold">interfaces</span>.
               </p>

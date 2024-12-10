@@ -12,8 +12,8 @@ const MENU_ITEMS: Array<MenuItem> = [
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="flex sticky z-50 top-0 justify-evenly items-center border-b-[1px] border-yellow-800 bg-[#111111d8] backdrop-blur-xl px-8">
-      <section className="flex flex-col text-neutral-500 mt-1 px-5 py-6 md:p-0 text-center md:text-start ">
+    <nav className="flex flex-col md:flex-row sticky z-50 top-0 justify-evenly items-center border-b-[1px] border-yellow-800 bg-[#111111d8] backdrop-blur-xl px-8">
+      <section className="flex flex-col text-neutral-500 mt-1 px-5 py-4 md:py-6 md:p-0 text-center md:text-start ">
         <h2 className="text-[1.50rem] font-carltine-cm text-yellow-600 leading-4">
           KarlinCoder
         </h2>
@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
               <li key={item.text}>
                 <a
                   href={item.link}
-                  className="inline-block px-5 py-6 text-neutral-300 hover:text-[#df9d47] active:text-neutral-300 hover:underline hover:underline-offset-8"
+                  className="inline-block px-5 py-6 text-neutral-300 hover:text-[#df9d47] active:text-neutral-300 hover:underline hover:underline-offset-8 "
                 >
                   {item.text}
                 </a>

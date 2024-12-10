@@ -16,12 +16,23 @@
   src: url("/fonts/OpenSans-Light.ttf") format("woff2");
 }
 
+@font-face {
+  font-family: "OpenSans-Semibold";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/OpenSans-Semibold.ttf") format("woff2");
+}
+
 .font-carltine-cm {
   font-family: "Carolina";
 }
 
 .font-opensans-cm {
   font-family: "OpenSans-Regular";
+}
+
+.font-opensans-semibold-cm {
+  font-family: "OpenSans-Semibold";
 }
 
 * {
