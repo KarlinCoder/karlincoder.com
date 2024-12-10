@@ -14,7 +14,7 @@ export const Experiencia: React.FC = () => {
         <p>Experiencia</p>
         <PiUserList className="mt-2" />
       </h2>
-      <main>
+      <section>
         <div className="max-w-[600px] md:max-w-[700px] lg:max-w-[870px] bg-neutral-700 bg-opacity-20 hover:bg-opacity-30 active:bg-opacity-20 py-8 px-9 rounded-2xl">
           <ul className="flex flex-col gap-3 text-neutral-300 list-inside font-opensans-cm">
             <li className="flex items-center gap-2">
@@ -123,7 +123,7 @@ export const Experiencia: React.FC = () => {
             </li>
           </ul>
         </div>
-      </main>
+      </section>
     </section>
   );
 };

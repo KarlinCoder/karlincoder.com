@@ -15,7 +15,7 @@ const Proyectos: React.FC = () => {
         <p>Proyectos</p>
         <RiBookShelfLine className="mt-2" />
       </h2>
-      <main className="flex flex-wrap justify-center items-center gap-5 max-w-[1200px]">
+      <section className="flex flex-wrap justify-center items-center gap-5 max-w-[1200px]">
         <ProjectCard
           title="Youtube Video Downloader"
           image="/images/projects/youtubedownloader.webp"
@@ -96,7 +96,7 @@ const Proyectos: React.FC = () => {
             de cada video, como ID, título, miniatura, duración y URL.
           </p>
         </ProjectCard>
-      </main>
+      </section>
     </section>
   );
 };

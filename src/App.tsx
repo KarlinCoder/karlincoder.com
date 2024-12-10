@@ -8,10 +8,12 @@ export const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Experiencia />
-      <Skills />
-      <Proyectos />
+      <main>
+        <Header />
+        <Experiencia />
+        <Skills />
+        <Proyectos />
+      </main>
     </div>
   );
 };
