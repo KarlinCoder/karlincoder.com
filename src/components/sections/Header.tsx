@@ -35,28 +35,28 @@ const Header: React.FC = () => {
             target="_blank"
             className={buttonClass}
           >
-            <FaWhatsapp className="scale-[1.5]" />
+            <FaWhatsapp className="scale-[1.5] text-[#5bc74d]" />
           </a>
           <a
             href="https://github.com/KarlinCoder"
             target="_blank"
             className={buttonClass}
           >
-            <FaGithub className="scale-[1.5]" />
+            <FaGithub className="scale-[1.5] text-[#7a6686]" />
           </a>
           <a
             href="https://instagram.com/its.karlin.coder"
             target="_blank"
             className={buttonClass}
           >
-            <FaInstagram className="scale-[1.5]" />
+            <FaInstagram className="scale-[1.5] text-[#e775e7]" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=61557125602814"
             target="_blank"
             className={buttonClass}
           >
-            <FaFacebook className="scale-[1.5]" />
+            <FaFacebook className="scale-[1.5] text-[#4b4dee]" />
           </a>
         </footer>
       </aside>

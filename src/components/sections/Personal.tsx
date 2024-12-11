@@ -62,7 +62,7 @@ export const Personal: React.FC = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="max-w-[260px] max-h-[260px] w-full h-full rounded-3xl overflow-hidden m">
+          <div className="min-w-[250px] min-h-[250px] max-w-[260px] max-h-[260px] w-full h-full rounded-md overflow-hidden">
             <img
               src="/images/avatar_alt.webp"
               alt="another picture of me"
