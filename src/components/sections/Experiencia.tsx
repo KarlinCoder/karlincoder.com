@@ -12,10 +12,10 @@ export const Experiencia: React.FC = () => {
     >
       <h2 className="flex flex-col items-center ga font-sans font-bold text-4xl text-neutral-300">
         <div className="flex gap-2  justify-center items-center">
-          <p>Experiencia</p>
+          <p>EXPERIENCIA</p>
           <PiUserList />
         </div>
-        <p className="text-sm font-sans mt-1 font-semibold text-blue-500">
+        <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
           CONTRIBUCIONES DESTACADAS
         </p>
       </h2>

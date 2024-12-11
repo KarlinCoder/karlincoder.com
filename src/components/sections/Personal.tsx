@@ -11,10 +11,10 @@ export const Personal: React.FC = () => {
     >
       <h2 className="flex flex-col items-center ga font-sans font-bold text-4xl text-neutral-300">
         <div className="flex gap-2  justify-center items-center">
-          <p>Personal</p>
+          <p>PERSONAL</p>
           <RiUser2Fill />
         </div>
-        <p className="text-sm font-sans mt-1 font-semibold text-blue-500">
+        <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
           UN POCO SOBRE MI
         </p>
       </h2>

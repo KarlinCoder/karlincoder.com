@@ -23,8 +23,19 @@
   src: url("/fonts/OpenSans-Semibold.ttf") format("woff2");
 }
 
+@font-face {
+  font-family: "Cassandra";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/CassandraPersonalUseRegular-3BjG.ttf") format("woff2");
+}
+
 .font-carltine-cm {
   font-family: "Carolina";
+}
+
+.font-cassandra-cm {
+  font-family: "Cassandra";
 }
 
 .font-opensans-cm {
