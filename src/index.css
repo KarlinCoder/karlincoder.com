@@ -53,3 +53,18 @@
 body {
   scroll-behavior: smooth;
 }
+
+@keyframes animation-on {
+  0% {
+    opacity: 0%;
+    right: -100%;
+  }
+  100% {
+    opacity: 100%;
+    right: 0%;
+  }
+}
+
+.sidebar-cm {
+  animation: animation-on 0.3s both ease-in-out;
+}
