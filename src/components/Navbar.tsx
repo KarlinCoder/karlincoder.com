@@ -16,8 +16,10 @@ const MENU_ITEMS: Array<MenuItem> = [
 
 export const Navbar: React.FC = () => {
   const [showMobileSidebar, setShowMobileSidebar] = useState(false);
+  const [showedOnes, setShowedOnes] = useState(false);
 
   const handleShowModal = () => {
+    setShowedOnes(true);
     setShowMobileSidebar((value) => !value);
   };
 
@@ -43,7 +45,9 @@ export const Navbar: React.FC = () => {
         </div>
       </section>
 
-      {showMobileSidebar && <Sidebar handleShow={handleCloseModal} />}
+      {showedOnes && (
+        <Sidebar isShowed={showMobileSidebar} handleShow={handleCloseModal} />
+      )}
 
       {!showMobileSidebar ? (
         <button className="block md:hidden" onClick={handleShowModal}>

@@ -65,6 +65,21 @@ body {
   }
 }
 
-.sidebar-cm {
-  animation: animation-on 0.3s both ease-in-out;
+@keyframes animation-off {
+  0% {
+    right: 0%;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    right: -100%;
+  }
+}
+
+.animation-on {
+  animation: animation-on 0.2s both ease-in-out;
+}
+
+.animation-off {
+  animation: animation-off 0.2s both ease-in-out;
 }
