@@ -11,16 +11,16 @@ const Proyectos: React.FC = () => {
       id="proyectos"
       className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
     >
-      <h2 className="flex flex-col items-center ga font-sans font-bold text-4xl text-neutral-300">
-        <div className="flex gap-2  justify-center items-center">
-          <p>PROYECTOS</p>
-          <RiBookShelfLine />
+      <h2 className="flex items-center gap-1 font-sans font-bold text-4xl text-neutral-300">
+        <RiBookShelfLine className="text-[3rem] text-yellow-200 mt-[6px]" />
+        <div className="flex flex-col items-start justify-center">
+          <p className="text-yellow-200">PROYECTOS</p>
+          <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
+            DESARROLLOS NOTABLES
+          </p>
         </div>
-        <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
-          DESARROLLOS NOTABLES
-        </p>
       </h2>
-      <section className="flex flex-wrap justify-center items-center gap-5 max-w-[1200px]">
+      <section className="flex flex-wrap justify-center items-center gap-5 max-w-[1800px]">
         <ProjectCard
           title="Youtube Video Downloader"
           image="/images/projects/youtubedownloader.webp"

@@ -26,14 +26,14 @@ const Skills: React.FC = () => {
       id="skills"
       className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
     >
-      <h2 className="flex flex-col items-center ga font-sans font-bold text-4xl text-neutral-300">
-        <div className="flex gap-2  justify-center items-center">
-          <p>SKILLS</p>
-          <FaCubesStacked />
+      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
+        <FaCubesStacked className="text-[3rem] text-yellow-200 mt-[6px]" />
+        <div className="flex flex-col items-start justify-center">
+          <p className="text-yellow-200">SKILLS</p>
+          <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
+            HABILIDADES TÉCNICAS
+          </p>
         </div>
-        <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
-          HABILIDADES TÉCNICAS
-        </p>
       </h2>
 
       <section>

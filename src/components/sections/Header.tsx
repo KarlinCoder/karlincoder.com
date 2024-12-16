@@ -8,12 +8,14 @@ const spanClasses = "text-yellow-400 font-bold";
 const Header: React.FC = () => {
   return (
     <header className="flex gap-5 flex-wrap justify-center items-center h-fit pb-[60px] pt-[60px] md:pt-[115px] px-8">
-      <div className="max-w-[220px] max-h-[220px] md:max-w-[300px] md:max-h-[300px] h-full w-full overflow-hidden rounded-full">
+      <div className="relative grid place-content-center p-[4px] max-w-[220px] max-h-[220px] md:max-w-[300px] md:max-h-[300px] h-full w-full overflow-hidden rounded-full z-[1] shadow-[0_0_40px_#0007] ">
         <img
           src="/images/avatar.webp"
           alt="imagen mia"
-          className="w-full h-full"
+          className="w-full h-full rounded-full z-[3]"
         />
+
+        <div className="absolute animate-spin w-full h-full z-[2] bg-gradient-to-r from-yellow-400 to-blue-500"></div>
       </div>
       <aside className="max-w-[400px] text-center md:text-left">
         <h1>

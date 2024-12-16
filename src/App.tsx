@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export const App: React.FC = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <main>
         <Header />
@@ -18,7 +18,7 @@ export const App: React.FC = () => {
         <Personal />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

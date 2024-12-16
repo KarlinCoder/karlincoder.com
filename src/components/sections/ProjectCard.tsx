@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
 }) => {
   return (
-    <article className="flex max-[420px]:flex-col-reverse sm:flex-row justify-between max-w-[520px] min-h-[210px] bg-neutral-800 bg-opacity-50 overflow-hidden rounded-md hover:scale-[1.01] hover:bg-opacity-60 transition-transform">
+    <article className="flex max-[420px]:flex-col-reverse sm:flex-row justify-between max-w-[750px] md:max-w-[520px] min-h-[210px] bg-neutral-800 bg-opacity-50 overflow-hidden rounded-md hover:scale-[1.02] hover:bg-opacity-60 border border-neutral-600 hover:shadow-2xl transition-all">
       <section className="flex flex-col justify-between p-5 w-[70%] max-[420px]:w-full">
         <header className="flex flex-col gap-2">
           <p className="text-lg text-neutral-100 font-bold font-opensans-cm">
@@ -28,14 +28,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <a
             target="_blank"
             href={link ? link : "#"}
-            className="inline-block text-green-200 hover:text-yellow-300 text-md hover:underline hover:underline-offset-4"
+            className="inline-block text-green-200 hover:text-yellow-300 text-md"
           >
             Visitar
           </a>
           <a
             target="_blank"
             href={github ? github : "#"}
-            className="inline-block text-green-200 hover:text-yellow-300 text-md hover:underline hover:underline-offset-4"
+            className="inline-block text-green-200 hover:text-yellow-300 text-md"
           >
             Github
           </a>
