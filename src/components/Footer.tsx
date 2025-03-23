@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         </footer>
       </blockquote>
 
-      <div className="flex gap-2 justify-center">
+      <div className="flex justify-center gap-2">
         <a
           href="https://api.whatsapp.com/send?phone=5352662128&text=Hola%20%F0%9F%91%8B%2C%20vengo%20desde%20su%20portafolio"
           target="_blank"

@@ -1,4 +1,3 @@
-import { RiBookShelfLine } from "react-icons/ri";
 import ProjectCard from "./ProjectCard";
 
 const PARAGRAPH_CLASSES =
@@ -11,12 +10,11 @@ const Proyectos: React.FC = () => {
       id="proyectos"
       className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
     >
-      <h2 className="flex items-center gap-1 font-sans font-bold text-4xl text-neutral-300">
-        <RiBookShelfLine className="text-[3rem] text-yellow-200 mt-[6px]" />
-        <div className="flex flex-col items-start justify-center">
-          <p className="text-yellow-200">PROYECTOS</p>
-          <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
-            DESARROLLOS NOTABLES
+      <h2 className="flex items-center w-full gap-1 font-sans text-4xl font-bold text-left text-neutral-300 max-w-[1000px]">
+        <div className="flex flex-col items-start ">
+          <p className="text-yellow-400">Proyectos que he desarrollado.</p>
+          <p className="mt-1 font-sans text-sm font-semibold text-blue-500">
+            Algunos repositorios son privados
           </p>
         </div>
       </h2>
@@ -26,6 +24,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/youtubedownloader.webp"
           link="https://youtube-dl-2025.vercel.app/"
           github="https://github.com/KarlinCoder/youtube-dl"
+          technologies={["React", "TypeScript", "Tailwind"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Descargador moderno de videos de YouTube, con un{" "}
@@ -41,6 +40,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/diccionario.webp"
           link="https://dictionary-es.vercel.app/"
           github="https://github.com/KarlinCoder/dictionary-es"
+          technologies={["React", "TypeScript", "Tailwind"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Diccionario en español intuitivo que utiliza una{" "}
@@ -53,6 +53,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/winofhands.webp"
           link="https://winofhands.vercel.app/"
           github="https://github.com/KarlinCoder/piedra-papel-tijera"
+          technologies={["React", "TypeScript", "Tailwind"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Un juego clásico de Piedra, Papel o Tijeras que almacena la
@@ -66,6 +67,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/mooviesearch.webp"
           link="https://mooviesearch.vercel.app/"
           github="https://github.com/KarlinCoder/mooviesearch.vercel.app"
+          technologies={["React", "JavaScript", "Tailwind"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Buscador de películas que presenta información detallada como fecha,
@@ -79,6 +81,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/firoreparaciones.webp"
           link="https://firo-reparaciones.es/"
           github="https://github.com/KarlinCoder/firo-reparaciones.es"
+          technologies={["React", "JavaScript", "CSSModules"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Una moderna <span className={SPAN_CLASSES}>Landing Page</span> que
@@ -92,6 +95,7 @@ const Proyectos: React.FC = () => {
           image="/images/projects/youtube-search-api.webp"
           link="https://youtube-search-api-2-edh3.onrender.com/api/search?q=programacion+ats"
           github="https://github.com/KarlinCoder/youtube-search-api"
+          technologies={["Node", "ExpressJS", "JavaScript"]}
         >
           <p className={PARAGRAPH_CLASSES}>
             Una <span className={SPAN_CLASSES}>API Rest</span> eficiente para

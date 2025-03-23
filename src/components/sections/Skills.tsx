@@ -1,4 +1,3 @@
-import { FaCubesStacked } from "react-icons/fa6";
 import {
   BootstrapLogo,
   CSSLogo,
@@ -17,27 +16,33 @@ import {
 } from "../../assets/svg-logos";
 
 const classNames =
-  "flex font-opensans-cm flex-row gap-2 justify-center items-center text-md text-neutral-200 px-4 box-border rounded-md border border-neutral-600 hover:bg-opacity-40 bg-opacity-20 active:bg-opacity-20 transition-transform transiton-colors cursor-pointer h-[60px] font-opensans-semibold-cm" +
+  "flex font-opensans-cm flex-row gap-2 justify-center items-center text-md text-neutral-200 px-4 box-border rounded-md border border-neutral-600 hover:bg-opacity-40 bg-opacity-40 active:bg-opacity-20 transition-transform transiton-colors cursor-pointer h-[60px] font-opensans-semibold-cm" +
   " ";
 
 const Skills: React.FC = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] px-8"
+      className="flex flex-col gap-6 justify-center items-center h-fit py-[60px] pb-[80px] px-8 border-2 border-yellow-800"
+      style={{
+        background:
+          "linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02))",
+        backdropFilter: "blur(10px)",
+        border: "1px solid rgba(255, 255, 255, 0.1)",
+        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
+      }}
     >
-      <h2 className="flex items-center gap-2 font-sans font-bold text-4xl text-neutral-300">
-        <FaCubesStacked className="text-[3rem] text-yellow-200 mt-[6px]" />
-        <div className="flex flex-col items-start justify-center">
-          <p className="text-yellow-200">SKILLS</p>
-          <p className="text-sm font-sans leading-3 font-semibold text-blue-500">
-            HABILIDADES TÉCNICAS
+      <h2 className="flex justify-center items-center w-full gap-1 font-sans text-4xl font-bold text-center text-neutral-300 max-w-[1000px]">
+        <div className="flex flex-col items-center ">
+          <p className="text-yellow-400">Tecnologías que domino</p>
+          <p className="font-sans text-sm font-semibold leading-3 text-blue-500 ">
+            No le temo a lo desconocido.
           </p>
         </div>
       </h2>
 
       <section>
-        <ul className="flex flex-wrap justify-center gap-4 max-w-[900px] w-full">
+        <ul className="flex flex-wrap justify-center gap-4 max-w-[700px] w-full">
           <li className={classNames + "bg-[#9e5f24]"}>
             <p className="font-medium">HTML</p>
             <div className="w-8">

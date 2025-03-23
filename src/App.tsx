@@ -5,6 +5,7 @@ import Skills from "./components/sections/Skills";
 import Proyectos from "./components/sections/Proyectos";
 import Personal from "./components/sections/Personal";
 import Footer from "./components/Footer";
+import Services from "./components/sections/Services";
 
 export const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ export const App: React.FC = () => {
         <Experiencia />
         <Skills />
         <Proyectos />
+        <Services />
         <Personal />
       </main>
       <Footer />
