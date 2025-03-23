@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <Element name="header">
-      <header className="flex flex-col items-center justify-center gap-5 px-6 py-12 md:flex-row md:py-16">
+      <header className="flex flex-col items-center justify-center gap-5 px-6 py-24 md:flex-row md:py-16">
         {/* Avatar */}
         <div className="relative grid place-content-center w-full max-w-[220px] md:max-w-[300px] h-auto overflow-hidden rounded-full shadow-[0_0_40px_#0007] bg-neutral-900  z-[1]">
           <img
