@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./sections/Sidebar";
 import { HiMenu, HiMenuAlt1 } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 interface MenuItem {
   text: string;
@@ -8,11 +9,12 @@ interface MenuItem {
 }
 
 const MENU_ITEMS: Array<MenuItem> = [
-  { text: "Experiencia", link: "#experiencia" },
-  { text: "Skills", link: "#skills" },
-  { text: "Proyectos", link: "#proyectos" },
-  { text: "Personal", link: "#personal" },
-  { text: "Servicios", link: "#servicios" },
+  { text: "Inicio", link: "header" },
+  { text: "Experiencia", link: "experiencia" },
+  { text: "Skills", link: "skills" },
+  { text: "Proyectos", link: "proyectos" },
+  { text: "Servicios", link: "servicios" },
+  { text: "Personal", link: "personal" },
 ];
 
 export const Navbar: React.FC = () => {
@@ -32,7 +34,7 @@ export const Navbar: React.FC = () => {
       <div className="flex items-center justify-between max-w-[1200px] mx-auto">
         {/* Logo y Avatar */}
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 overflow-hidden rounded-full shadow-lg">
+          <div className="w-12 h-12 overflow-hidden rounded-full shadow-lg bg-neutral-900">
             <img
               src="/images/avatar.webp"
               alt="Avatar"
@@ -52,12 +54,14 @@ export const Navbar: React.FC = () => {
           <ul className="flex gap-6 text-sm font-medium">
             {MENU_ITEMS.map(({ text, link }) => (
               <li key={text}>
-                <a
-                  href={link}
-                  className="transition-colors duration-300 hover:text-yellow-500 hover:underline hover:underline-offset-4"
+                <Link
+                  smooth={true}
+                  duration={500}
+                  to={link}
+                  className="transition-colors duration-300 cursor-pointer hover:text-yellow-500 hover:underline hover:underline-offset-4"
                 >
                   {text}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

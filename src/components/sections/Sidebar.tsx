@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BiHome } from "react-icons/bi";
 import { FaCubesStacked } from "react-icons/fa6";
 import { PiUserList } from "react-icons/pi";
 import { RiBookShelfLine, RiUser2Fill } from "react-icons/ri";
 import { TbTools } from "react-icons/tb";
+import { Link } from "react-scroll";
 
 interface SidebarProps {
   isShowed: boolean;
@@ -27,64 +29,76 @@ const Sidebar: React.FC<SidebarProps> = ({ isShowed, handleShow }) => {
       <nav className="flex p-5 flex-col justify-center w-full max-w-[270px] h-screen bg-neutral-800 shadow-[0_0_40px_#0008]">
         <ul>
           <li>
-            <a
+            <Link
               className={linkClasses}
               onClick={() => {
                 handleShow(false);
               }}
-              href="#experiencia"
+              to="header"
+            >
+              <BiHome className={iconClasses} />
+              <p>Inicio</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={linkClasses}
+              onClick={() => {
+                handleShow(false);
+              }}
+              to="experiencia"
             >
               <PiUserList className={iconClasses} />
               <p>Experiencia</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={linkClasses}
               onClick={() => {
                 handleShow(false);
               }}
-              href="#skills"
+              to="skills"
             >
               <FaCubesStacked className={iconClasses} />
               <p>Skills</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={linkClasses}
               onClick={() => {
                 handleShow(false);
               }}
-              href="#proyectos"
+              to="proyectos"
             >
               <RiBookShelfLine className={iconClasses} />
               <p>Proyectos</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={linkClasses}
               onClick={() => {
                 handleShow(false);
               }}
-              href="#personal"
+              to="personal"
             >
               <RiUser2Fill className={iconClasses} />
               <p>Personal</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={linkClasses}
               onClick={() => {
                 handleShow(false);
               }}
-              href="#services"
+              to="services"
             >
               <TbTools className={iconClasses} />
               <p>Servicios</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
